@@ -23,7 +23,7 @@ tenfile=${thumuc}_$(date +%F).tar.gz
 #chuyen thu muc thanh file qua tar
 tar -czf $tenfile "$thumuc"
 
-#chuyen file do qua thu muc backupo
+#chuyen file do qua thu muc backupp
 mv $tenfile ~/backup
 
 #lay dung luong file
