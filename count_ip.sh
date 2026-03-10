@@ -10,7 +10,7 @@ declare -a fail_count=0
 
 tail -F "$LOGFILE" | while read line
 do
-if [[ $LOGFILE==*"Fail login"* ]]; then
+if [[ $line == *Fail login* ]]; then
    ip=$(echo "$line" | awk '{print $(NF-3)}')
    ((fail_count[$ip]++))
 fi
