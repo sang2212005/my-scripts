@@ -1,9 +1,6 @@
-
 #!/bin/bash
 
-
 echo "đang kiểm tra dung lượng đĩa...."
-
 
 df -h --output=source,pcent |
 tail -n +2 |
